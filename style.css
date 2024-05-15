@@ -1,0 +1,228 @@
+/*ESTILO GERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+}
+
+#container{
+  width: 100vw;
+  height: 20vh;
+  background: url('img/bah.jpg');
+  background-size: cover;
+}
+
+.nav-link{
+   
+   font-weight: 500;
+   font-style: normal;
+   color: blue;
+
+}
+
+.logo {
+  width: 90px;
+  height: 50px;
+  overflow: hidden; 
+  position: relative;
+}
+
+.logo img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lupa{
+    width: 50px;
+    height: 50px;
+}
+
+.pesquisa{
+    padding-left: 800px;
+    font-family: "Merriweather", serif;
+    height: auto;
+    flex: 10;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    
+}
+
+
+main.cards {
+  display: flex;
+  padding: 50px;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 170px;
+}
+
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards section.card .icon {
+  width: 64px;
+  height: 64px;
+}
+
+main.cards section.card img {
+  width: 100%;
+}
+
+main.cards section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+main.cards section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0;
+}
+
+main.cards section.card.contact button {
+  background:#3E8AFF;
+}
+main.cards section.card.shop button {
+  background:#3E8AFF;
+}
+main.cards section.card.about button {
+  background:#3E8AFF;
+}
+
+main.cards section.card.contact {
+  box-shadow: 30px 30px 50px -30px #5A99D8;
+}
+main.cards section.card.shop {
+  box-shadow: 30px 30px 50px -30px #5A99D8;
+}
+main.cards section.card.about {
+  box-shadow: 30px 30px 50px -30px #5A99D8;
+}
+
+@media screen and (max-width: 720px) {
+  main.cards {
+      flex-direction: column;
+  }
+
+  main.cards section.card {
+      margin-left: 0;
+      margin-bottom: 32px;
+  }
+
+  main.cards section.card:last-child {
+      margin-bottom: 0;
+  }
+
+  main.cards section.card button {
+      font-size: 70%;
+  }
+
+}
+.search-container {
+  padding-left: 700px;
+ 
+}
+
+.search-input {
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  padding: 2px 2px 2px 2px; /* Aumentar o padding à direita para acomodar o ícone */
+  width: 190px;
+  position: relative;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  position: absolute; /* Posição absoluta em relação ao campo de pesquisa */
+  right: 350px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+.arrow {
+  font-size: 24px;
+  color: #007bff; /* Cor da seta, você pode alterar conforme necessário */
+  transform: rotate(200deg); /* Altere o ângulo para mudar a direção da seta */
+  cursor: pointer;
+}
+
+
+.projects-section {
+  padding: 50px; /* Espaçamento interno */
+  text-align: center; /* Centralizar o conteúdo */
+  background-color: #f0f8ff; /* Cor de fundo com tons azuis */
+}
+
+.project {
+  margin-bottom: 30px; /* Espaçamento entre os projetos */
+}
+
+.project img {
+  width: 300px; /* Tamanho das imagens */
+  border-radius: 10px; /* Borda arredondada */
+  margin-bottom: 20px; /* Espaçamento abaixo das imagens */
+}
+
+.project h3 {
+  color: #007bff; /* Cor do título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.wpp-link{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.fa whatsapp{
+  color: white;
+  margin-top: 16px;
+}
