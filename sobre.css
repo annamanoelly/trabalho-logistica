@@ -75,3 +75,39 @@
     padding-left: 20px;
 }
 
+.sobre-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sobre img {
+    max-width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+  }
+  
+  .texto {
+    margin-top: 20px;
+  }
+  
+  .texto h6 {
+    margin: 0;
+  }
+  
+  .sobre-section h2 {
+    margin: 0;
+  }
+  
+  .sobre-section p {
+    margin-top: 10px;
+  }
+  
+  
