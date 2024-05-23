@@ -83,11 +83,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
-  position: relative; /* Adiciona um contexto de posicionamento para os elementos filhos */
+  position: relative;
+  top: 3rem;
 }
 
 .sobre-img {
-  position: relative; /* Necessário para posicionamento absoluto do h2 */
+  position: relative;
 }
 
 .sobre-img img {
@@ -126,6 +127,29 @@
   .sobre-text {
     flex-basis: 70%;
   }
+}
+
+/*cards*/
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  margin-top: 3rem;
+  box-shadow: 30px 30px 50px -30px #5A99D8;
+
+}
+
+
+.card h2 {
+  margin-top: 0;
 }
 
 
