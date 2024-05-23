@@ -75,39 +75,61 @@
     padding-left: 20px;
 }
 
-.sobre-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
+
+/*conteúdo sobre*/
+.sobre-container {
+  display: flex;
+  background-color: #f0f8ff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative; /* Adiciona um contexto de posicionamento para os elementos filhos */
+}
+
+.sobre-img {
+  position: relative; /* Necessário para posicionamento absoluto do h2 */
+}
+
+.sobre-img img {
+  width: 80%;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.sobre-text {
+  flex-basis: 100%;
+  padding: 2rem;
+}
+
+.sobre-text h6 {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+.sobre-text p {
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .sobre-container {
+    flex-wrap: nowrap;
   }
-  
-  .sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  .sobre-img img {
+    margin-left: 5rem;
+    margin-top: 5rem;
   }
-  
-  .sobre img {
-    max-width: 200px; /* Ajuste conforme necessário */
-    height: auto;
+
+  .sobre-text {
+    flex-basis: 70%;
   }
-  
-  .texto {
-    margin-top: 20px;
-  }
-  
-  .texto h6 {
-    margin: 0;
-  }
-  
-  .sobre-section h2 {
-    margin: 0;
-  }
-  
-  .sobre-section p {
-    margin-top: 10px;
-  }
-  
+}
+
+
+
+
+
   
