@@ -51,5 +51,81 @@
     font-size: 12px;
       
 }
+
+/*footer*/
+
+footer {
+    background-color: #f0f8ff;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px; /* Espaço entre a logomarca e o restante do conteúdo */
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.contact-info,
+.location,
+.hours,
+.social-media {
+    margin-bottom: 20px;
+    flex: 1 1 200px; /* Garante que as seções sejam responsivas */
+    max-width: 300px; /* Opcional: Limita a largura máxima */
+}
+
+.contact-info h5,
+.location h5,
+.hours h5,
+.social-media h5 {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px; 
+    margin-top: 2rem;
+    margin-left: -19rem;
+    
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0 10px; 
+    transition: opacity 0.3s ease;
+}
+
+.social-media a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
   
 
