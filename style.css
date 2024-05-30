@@ -15,7 +15,7 @@
 }
 
 header {
-  background-color:white;
+  background-color:whi;
 }
 
 .nav-bar {
@@ -58,8 +58,8 @@ header {
 
 .login-button button {
   border: none;
-  padding: 8px 15px;
-  border-radius: 10px;
+  padding: 8px 20px;
+  border-radius: 20px;
   background-color: #5A99D8;
 }
 
@@ -118,11 +118,14 @@ header {
   }
 }
 
-
+/*cards*/
 
 main.cards {
   display: flex;
+  flex-wrap: wrap;
   padding: 50px;
+  gap: 20px; /* Adicione um gap entre os cards */
+  justify-content: center; /* Centraliza os cards */
 }
 
 main.cards section.card {
@@ -133,12 +136,9 @@ main.cards section.card {
   background: #fff;
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  max-height: 468px;
-  margin-left: 170px;
-}
-
-main.cards section.card:first-child {
-  margin-left: 0;
+  max-height: 40rem;
+  flex: 1 1 300px; /* Permite que os cards se ajustem ao espaço disponível */
+  box-sizing: border-box; /* Garante que padding e borda sejam incluídos no tamanho total do elemento */
 }
 
 main.cards section.card .icon {
@@ -171,57 +171,87 @@ main.cards section.card button {
   font-size: 80%;
   font-weight: 500;
   color: #fff;
-  margin-bottom: 16px 0;
+  margin-bottom: 16px;
 }
 
-main.cards section.card.contact button {
-  background:#3E8AFF;
-}
-main.cards section.card.shop button {
-  background:#3E8AFF;
-}
+main.cards section.card.contact button,
+main.cards section.card.shop button,
 main.cards section.card.about button {
-  background:#3E8AFF;
+  background: #3E8AFF;
 }
 
-main.cards section.card.contact {
-  box-shadow: 30px 30px 50px -30px #5A99D8;
-}
-main.cards section.card.shop {
-  box-shadow: 30px 30px 50px -30px #5A99D8;
-}
+main.cards section.card.contact,
+main.cards section.card.shop,
 main.cards section.card.about {
   box-shadow: 30px 30px 50px -30px #5A99D8;
 }
 
 @media screen and (max-width: 720px) {
   main.cards {
-      flex-direction: column;
+    flex-direction: column;
+    padding: 20px; /* Reduz o padding em telas menores */
   }
 
   main.cards section.card {
-      margin-left: 0;
-      margin-bottom: 32px;
+    margin-bottom: 32px;
   }
 
   main.cards section.card:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   main.cards section.card button {
-      font-size: 70%;
+    font-size: 70%;
   }
 
+  .search-container {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo do campo de pesquisa */
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  .search-button {
+    right: 10px; /* Ajuste a posição do botão de pesquisa */
+  }
 }
+
+@media screen and (max-width: 480px) {
+  main.cards {
+    padding: 10px;
+  }
+
+  main.cards section.card {
+    margin-bottom: 20px;
+  }
+
+  main.cards section.card button {
+    font-size: 60%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-button {
+    right: 5px; /* Ajuste adicional para telas muito pequenas */
+  }
+}
+
 .search-container {
   padding-left: 700px;
- 
+  position: relative; /* Necessário para a posição absoluta do botão */
+  display: flex;
+  justify-content: center; /* Centraliza a barra de pesquisa */
 }
 
 .search-input {
   border: 2px solid #ccc;
   border-radius: 40px;
-  padding: 2px 2px 2px 2px; /* Aumentar o padding à direita para acomodar o ícone */
+  padding: 8px 40px 8px 12px; /* Ajusta o padding para acomodar o ícone */
   width: 190px;
   position: relative;
 }
@@ -230,7 +260,7 @@ main.cards section.card.about {
   background-color: transparent;
   border: none;
   position: absolute; /* Posição absoluta em relação ao campo de pesquisa */
-  right: 350px;
+  right: 15px; /* Ajuste a posição do botão */
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -241,9 +271,6 @@ main.cards section.card.about {
   height: 20px;
 }
 
-
-
-
 .arrow {
   font-size: 24px;
   color: #007bff; /* Cor da seta, você pode alterar conforme necessário */
@@ -251,7 +278,7 @@ main.cards section.card.about {
   cursor: pointer;
 }
 
-
+/*Projeto*/
 .projects-section {
   padding: 50px; /* Espaçamento interno */
   text-align: center; /* Centralizar o conteúdo */
